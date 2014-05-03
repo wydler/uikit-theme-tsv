@@ -7,7 +7,6 @@ before_install:
   - npm install -g grunt-cli
 script:
   - mkdir -p uikit/themes/custom
-  - export
   - cp -r ${TRAVIS_REPO_SLUG} uikit/themes/custom/tsv
   - cd uikit
   - npm install
