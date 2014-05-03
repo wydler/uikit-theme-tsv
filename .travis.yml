@@ -3,7 +3,10 @@ node_js:
   - "0.10"
 before_install:
   - npm install -g grunt-cli
-install:
+script:
+  - git clone https://github.com/uikit/uikit.git uikit
+  - cd uikit
   - npm install
-before_script:
-  - grunt build
+  - mkdir -p themes/custom
+  - cp -r $TRAVIS_REPO_SLUG themes/custom/tsv
+  - grunt
