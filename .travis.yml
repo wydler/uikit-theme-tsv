@@ -2,8 +2,8 @@ language: node_js
 node_js:
   - "0.10"
 before_install:
-  - cd
-  - git clone https://github.com/uikit/uikit.git uikit
+  - cd && pwd && ll
+  - git clone https://github.com/uikit/uikit.git uikit && ll
   - npm install -g grunt-cli
 script:
   - mkdir -p uikit/themes/custom
