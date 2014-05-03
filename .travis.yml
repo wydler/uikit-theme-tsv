@@ -8,5 +8,5 @@ script:
   - cd uikit
   - npm install
   - mkdir -p themes/custom
-  - cp -r $TRAVIS_REPO_SLUG themes/custom/tsv
+  - cp -r ../$TRAVIS_REPO_SLUG themes/custom/tsv
   - grunt
