@@ -1,2 +1,2 @@
-UIkit for TSV Hochdorf
-======================
+UIkit theme for TSV Hochdorf
+============================
